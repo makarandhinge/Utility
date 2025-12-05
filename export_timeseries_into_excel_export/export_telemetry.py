@@ -36,7 +36,7 @@ def get_timeseries(base_url, jwt, device_id, keys, start_ts, end_ts):
         "startTs": start_ts,
         "endTs": end_ts,
         "interval": 0,
-        "limit": 10000,
+        "limit": 1000000,
         "useStrictDataTypes": "false"
     }
     r = requests.get(
